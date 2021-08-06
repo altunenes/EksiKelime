@@ -1,4 +1,3 @@
-library(SnowballC)
 library(tm)
 library(tidyverse)
 library(Rcpp)
@@ -17,7 +16,7 @@ doc.corpus<-tm_map(doc.corpus,content_transformer(removeNumbers))
 
 doc.corpus<-tm_map(doc.corpus, removeWords, edatbag$kelime)
 
-# doc.corpus<-tm_map(doc.corpus, removeWords, c("he","var","sen","gel","amk")) #buraya siz kendi verinize g�re yeni custom kelimeler ekleyip filtrelemeler yapabilirsiniz
+# doc.corpus<-tm_map(doc.corpus, removeWords, c("he","var","sen","gel","amk")) #buraya siz kendi verinize göre yeni custom kelimeler ekleyip filtrelemeler yapabilirsiniz
 
 doc.corpus<-tm_map(doc.corpus, removeWords, stopwords("english"))
 
@@ -36,11 +35,26 @@ term_frequency<-rowSums(mtdm)
 
 term_frequency<-sort(term_frequency,decreasing=TRUE)
 
-#en �ok kullanillan 70 kelimeyi sayilariyla birlikte yazdir:
+#en çok kullanillan 70 kelimeyi sayilariyla birlikte yazdir:
 term_frequency[1:70]
 
 
-#bir subset islemi yapip kelime frekansina veya baska bir seye g�re se�im yapip g�rsellestirme:
+
+text_data<- data.frame(word = names(term_frequency),freq=term_frequency)  #önce boş bir data.frame kullanılan kelimelerin frekanslarıyla ortaya konulur
+text_data<-remove_rownames(text_data)                                     #satır isimlerini numara yaptık
+
+library(wordcloud) #word cloud seklinde görsellestirme 
+
+set.seed(1234) ### zar  
+wordcloud(words = text_data$word, freq = text_data$freq, min.freq = 100, #min freq ile frekans sayısı en az 100 olan kelimeleri filtrelenir:
+          max.words=30, random.order=FALSE, rot.per=0.35, 
+          colors=brewer.pal(8, "Dark2"))
+
+
+
+
+
+#bir subset islemi yapip kelime frekansina veya baska bir seye göre seçim yapip görsellestirme:
 w<-subset(term_frequency,term_frequency>=70)
 
 barplot(w, las = 2)
