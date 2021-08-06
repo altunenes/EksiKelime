@@ -2,7 +2,7 @@ library(tm)
 library(tidyverse)
 library(Rcpp)
 library(tidyverse)
-
+library(wordcloud)
 edatbag <- read_csv("edatbag.csv")  ### edatlar, baglaclar
 
 
@@ -43,7 +43,7 @@ term_frequency[1:70]
 text_data<- data.frame(word = names(term_frequency),freq=term_frequency)  #önce boş bir data.frame kullanılan kelimelerin frekanslarıyla ortaya konulur
 text_data<-remove_rownames(text_data)                                     #satır isimlerini numara yaptık
 
-library(wordcloud) #word cloud seklinde görsellestirme 
+#word cloud seklinde görsellestirme 
 
 set.seed(1234) ### zar  
 wordcloud(words = text_data$word, freq = text_data$freq, min.freq = 100, #min freq ile frekans sayısı en az 100 olan kelimeleri filtrelenir:
