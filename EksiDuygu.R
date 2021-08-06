@@ -1,7 +1,6 @@
-library(tm)
-library(RCurl)
+
 library(tidyverse)
-library(Rcpp)
+library(tidytext)
 
 #lexicon icin: bkz F. Saglam, B. Genç, H. Sever, "Extending a Sentiment Lexicon with Synonym-Antonym Datasets: SWNetTR++", Turkish Journal of Electrical Engineering and Computer Sciences, 27 (2019) 1806-1820.
 
