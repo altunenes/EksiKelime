@@ -14,5 +14,5 @@ sentiment icin data: https://github.com/swnettr/SWNetTR
 
 
 
-not: edatbag.csv hem toplama hem de custom bir şekilde oluşturulmuştur, kendi isteğinize göre yeni kelimeler ekleyebilir veya çıkartabilirsiniz. 
+not: edatbag.csv hem başka kaynaklardan alıntı (örneğin aşağıdaki link) hem de sözlüğe özel custom bir şekilde oluşturulmuştur, kendi isteğinize göre yeni kelimeler ekleyebilir veya çıkartabilirsiniz oluştururken kendi amacım daha fazla "isim" yapısındaki sözcüklere ulaşmak ve yazarı tanımasak bile hakkında daha isabetli tahminler yapabilmek içindi.
 https://github.com/ahmetax/trstop/blob/master/dosyalar/turkce-stop-words
