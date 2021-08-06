@@ -2,8 +2,7 @@ library(tm)
 library(tidyverse)
 library(Rcpp)
 library(tidyverse)
-library(wordcloud)
-library(RColorBrewer)
+
 
 edatbag <- read_csv("edatbag.csv")  ### edatlar, baglaclar
 
@@ -51,7 +50,7 @@ set.seed(1234) ### zar
 
 wordcloud::wordcloud(words = text_data$word, freq = text_data$freq, min.freq = 85,
           max.words=30, random.order=FALSE, rot.per=0.35, 
-          colors=brewer.pal(8, "Dark2"))
+          colors=RColorBrewer::brewer.pal(8, "Dark2"))
 
 
 
