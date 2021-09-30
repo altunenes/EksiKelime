@@ -1,5 +1,4 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/emportent/eksikelime/badge)](https://www.codefactor.io/repository/github/emportent/eksikelime)
-
+[![CodeFactor](https://www.codefactor.io/repository/github/altunenes/eksikelime/badge)](https://www.codefactor.io/repository/github/altunenes/eksikelime)
 # EksiKelime
 Ekşi Sözlük kelime+sentiment analizi
 
