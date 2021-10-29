@@ -1,6 +1,6 @@
 library(xml2)
 
-#mevcut working directory'i görmek için konsola getwd() yazin
+#mevcut working directory'i gÃ¶rmek iÃ§in konsola getwd() yazin
 doc <-read_xml("yazar.xml") #eks'den alinan dosyanin tam ismi
 
 
@@ -9,7 +9,7 @@ doc <-read_xml("yazar.xml") #eks'den alinan dosyanin tam ismi
 recs <- xml_find_all(doc, "//entry")  
 vals <- trimws(xml_text(recs))
 
-yazar<-data.frame(text=vals)
+yazar<-data.frame(text=vals, stringsAsFactors = FALSE)
 
-# opsiyonel: entrylerinizi düzenli bir excel dosyasina dönüstürme  
+# opsiyonel: entrylerinizi dÃ¼zenli bir excel dosyasina dÃ¶nÃ¼stÃ¼rme  
 # write.csv(yazar,"dosyaismi.csv")
