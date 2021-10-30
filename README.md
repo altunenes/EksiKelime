@@ -1,6 +1,6 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/altunenes/eksikelime/badge)](https://www.codefactor.io/repository/github/altunenes/eksikelime)
 # EksiKelime
-Ekşi Sözlük kelime+sentiment analizi
+Ekşi Sözlük yazara özgü kelime+sentiment analizi
 
 
 # EksiKelime Güncelleme
