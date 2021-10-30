@@ -11,14 +11,14 @@ import matplotlib.pyplot as plt
 from nltk.corpus import stopwords
 import string
 
-
 """
 # ==========================================================================================================================================================
-#                                             Sadece aşağıdaki "yazar.csv" bölümüne, çalışma dizininizde bulunan csv dosyanızın ismini yazın
+#                                                                       Yazar Enes Altun 10/30/2021
+                                            Sadece 21. satırdaki "yazaradi.xml" dosyasının ismini, çalışma dizininizde bulunan XML dosyanızla değiştirin. 
+                                                        XML Dosyasini nereden elde edeceğinize ilişkin bilgi için ana sayfaya bakınız.
 # ==========================================================================================================================================================
 """
-
-df=pd.read_csv("yazar.csv")
+df = pd.read_xml("yazaradi.xml", xpath=".//entry")
 
 sent=pd.read_csv("turkish_lexicon.csv",encoding="utf-8-sig")
 
