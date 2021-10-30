@@ -8,7 +8,8 @@ import string
 """
 # ==========================================================================================================================================================
 #                                                                       Yazar Enes Altun 10/30/2021
-                                            Sadece 21. satırdaki "yazaradi.xml" dosyasının ismini, çalışma dizininizde bulunan XML dosyanızla değiştirin. 
+                                            Sadece 15. satırdaki "yazaradi.xml" dosyasının ismini, çalışma dizininizde bulunan XML dosyanızla değiştirin.
+                                                         not: edatbag.csv ve turkish_lexicon.csv'nin çalışma dizininde bulunması gerekmekte.
                                                         XML Dosyasini nereden elde edeceğinize ilişkin bilgi için ana sayfaya bakınız.
 # ==========================================================================================================================================================
 """
