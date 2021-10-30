@@ -6,7 +6,7 @@ Ekşi Sözlük kelime+sentiment analizi
 
 
 
-Bu scriptleri ilk yazdığımda, yazarın kendi datasını sözlüğe girip kendisi alması gerekmekteydi, ancak https://github.com/cagriozkurt/EksiYedek ile bu iş çok daha kolay hale getirilmiş. Bu adresten gidip ilgili scripti çalıştırdığınızda size XML dosyası halinde dilediğiniz yazarın bütün entryleri XML formatında veriyor. XML dosyasını csv'e çevirmek için yine benim yazdığım R scriptini kullanabilirsiniz. 
+Bu scriptleri ilk yazdığımda, yazarın kendi datasını sözlüğe girip kendisi alması gerekmekteydi, ancak https://github.com/cagriozkurt/EksiYedek ile bu iş çok daha kolay hale getirilmiş. Bu adresten gidip ilgili scripti çalıştırdığınızda size XML dosyası halinde dilediğiniz yazarın bütün entryleri XML formatında veriyor. R içerisinde yapmak istiyorsanız XML dosyasını csv'e çevirmek için yine benim yazdığım R scriptini kullanabilirsiniz. Ancak Python için buna gerek yok, scriptlerin içerisine otomatik olarak ekledim, sadece EksiYedek scriptini çalıştırıp dilediğiniz yazarın XML dosyasını indirdikten sonra ilgili python scriptlerini çalıştırmanız yeterlidir. 
 
 Son olarak, wordcloud ve yine vader tarzı sentiment analizi için R kodlarını Python diline çevirerek de ekledim; dilediğiniz dil ile bu işi yapabilirsiniz :)
 
