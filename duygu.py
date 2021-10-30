@@ -9,13 +9,14 @@ from unidecode import unidecode
 """
 # ==========================================================================================================================================================
 #                                                                       Yazar Enes Altun
-                                            Sadece 18. satırdaki "evet.csv" dosyasının ismini, çalışma dizininizde bulunan csv dosyanızla değiştirin.
+                                            Sadece 18. satırdaki "yazaradi.xml" dosyasının ismini, çalışma dizininizde bulunan XML dosyanızla değiştirin. 
+                                                        XML Dosyasini nereden elde edeceğinize ilişkin bilgi için ana sayfaya bakınız.
 # ==========================================================================================================================================================
 """
 
 
 #input csv
-df=pd.read_csv("evet.csv")
+df = pd.read_xml("yazaradi.xml", xpath=".//entry")
 
 #lexicon
 sent=pd.read_csv("turkish_lexicon.csv",encoding="utf-8-sig")
