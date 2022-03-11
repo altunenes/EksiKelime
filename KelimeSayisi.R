@@ -15,11 +15,11 @@ doc.corpus<-tm_map(doc.corpus,content_transformer(removeNumbers))
 
 doc.corpus<-tm_map(doc.corpus, removeWords, edatbag$kelime)
 
-# doc.corpus<-tm_map(doc.corpus, removeWords, c("he","var","sen","gel","amk")) #buraya siz kendi verinize göre yeni custom kelimeler ekleyip filtrelemeler yapabilirsiniz
+# doc.corpus<-tm_map(doc.corpus, removeWords, c("he","var","sen","gel","amk")) #buraya siz kendi verinize gÃ¶re yeni custom kelimeler ekleyip filtrelemeler yapabilirsiniz
 
 doc.corpus<-tm_map(doc.corpus, removeWords, stopwords("english"))
 
-#özel isaretleri falan kaldirmak için basit bir kod yazimi:
+#Ã¶zel isaretleri falan kaldirmak iÃ§in basit bir fonksiyon yazimi:
 
 removeURL<-function(x) gsub('http[[:alnum:]]*','',x)
 
@@ -36,14 +36,14 @@ term_frequency<-rowSums(mtdm)
 
 term_frequency<-sort(term_frequency,decreasing=TRUE)
 
-#en çok kullanillan 70 kelimeyi sayilariyla birlikte yazdir:
+#en Ã§ok kullanillan 70 kelimeyi sayilariyla birlikte yazdir:
 term_frequency[1:70]
 
 
 text_data<- data.frame(word = names(term_frequency),freq=term_frequency)
 text_data<-remove_rownames(text_data)
 
-#word cloud seklinde görsellestirme 
+#word cloud seklinde gÃ¶rsellestirme 
 
 set.seed(1234) ### zar
 wordcloud::wordcloud(words = text_data$word, freq = text_data$freq, min.freq = 85,
@@ -51,7 +51,7 @@ wordcloud::wordcloud(words = text_data$word, freq = text_data$freq, min.freq = 8
           colors=RColorBrewer::brewer.pal(8, "Dark2"))
 
 
-#bir subset islemi yapip kelime frekansina veya baska bir seye göre seçim yapip görsellestirme:
+#bir subset islemi yapip kelime frekansina veya baska bir seye gÃ¶re seÃ§im yapip gÃ¶rsellestirme:
 
 w<-subset(term_frequency,term_frequency>=70)
 
