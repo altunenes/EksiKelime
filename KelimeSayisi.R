@@ -1,7 +1,6 @@
 library(tm)
 library(tidyverse)
 library(Rcpp)
-library(tidyverse)
 edatbag <- read_csv("edatbag.csv")  ### edatlar, baglaclar
 
 
