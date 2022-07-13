@@ -4,6 +4,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from nltk.corpus import stopwords
 import string
+import nltk
+
 
 """
 # ==========================================================================================================================================================
@@ -15,10 +17,11 @@ import string
 """
 df = pd.read_xml("yazaradi.xml", xpath=".//entry")
 
-sent=pd.read_csv("turkish_lexicon.csv",encoding="utf-8-sig")
+sent=pd.read_csv("SWNetTR.csv",encoding="utf-8-sig")
 
 stop=pd.read_csv("edatbag.csv")
 
+nltk.download('stopwords')
 
 
 def remove_punctuation(text):
