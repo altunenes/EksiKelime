@@ -1,4 +1,8 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/altunenes/eksikelime/badge)](https://www.codefactor.io/repository/github/altunenes/eksikelime)
+
+![eksi](https://user-images.githubusercontent.com/54986652/227799394-9a51d729-3e7a-488b-99eb-4513f017f9b7.jpg)
+
+
 # EksiKelime
 Ekşi Sözlük yazara özgü kelime+sentiment analizi
 
