@@ -9,9 +9,9 @@ Ekşi Sözlük yazara özgü kelime+sentiment analizi
 
 # EksiKelime Güncelleme 2023 
 
-3 yıl önce akademik bir çalışma için yazdığım bu scriptleri geliştirmek, düzenlemek oldukça vakit alacak ve dillerin yapıları itibari ile ayrılacak zamana değmeyeceğini düşündüğümden "EkşiKelime" nin hali hazırda yaptığı ve yapamadığı pek çok özelliklerle birlikte çok daha hızlı ve rahat kullanımı olan Rust programlama dili versiyonunu oluşturdum. Bu yüzden bu GitHub reposunu geliştimeyeceğim. 
+3 yıl önce akademik bir çalışma için yazdığım bu scriptleri geliştirmek, düzenlemek oldukça vakit alacağını  ve dillerin yapıları itibari ile ayrılacak zamana değmeyeceğini düşündüğümden "EkşiKelime" nin hali hazırda yaptığı ve yapamadığı pek çok özelliklerle birlikte çok daha hızlı ve rahat kullanımı olan Rust programlama dili versiyonunu oluşturdum. Bu yüzden bu GitHub reposunu artık geliştirmeyi, güncellemeyi düşünmüyorum. 
 
-Daha modern, hızlı istediğiniz başlıktan kullanıcıdan tek satırda entry çekip duygu analizi yapmak için: https://github.com/altunenes/rustysozluk
+Daha modern, hızlı; istediğiniz başlıktan veya kullanıcıdan tek satırda entry çekip duygu analizi yapmak için: https://github.com/altunenes/rustysozluk
 
 
 
